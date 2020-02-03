@@ -1,0 +1,133 @@
+body {
+    width: 100%; /*Sets the width of the body to max*/
+    height: 100%;/*Sets the height of the body to max*/
+    margin: 0;/*leaves no margn around the body*/
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.home {
+    width:100%;
+}
+
+.header .navbar {
+    background-color: #1D3557;/*colour for the navbar*/
+    color: #fff;/*colour for the navbar text*/
+    overflow: hidden;
+    border: 1px #E63946;
+}
+.Container {
+    width: 1170px;/*Arranges the text inside the navbar and sets an apt margin agound it*/
+    margin: auto;
+}
+.header .navbar h3 {
+    float: left;/*places the words"KS4 helper to the left of the navbar because that is the word within the header,navbar and h3 tags"*/
+}
+
+.header .navbar h3 span {
+    color: #E63946;/*Changes the colour of the word "helper" as it is within <span>*/
+}
+.header .navbar ul {
+    list-style: none;
+    padding-left: 0px;
+    overflow: hidden;
+    float: right;
+}
+.header .navbar ul li {
+    float: left; /*places each element of the list in the same horizontal line eg: a b c */
+    padding: 5px;/*5px gap bw each element of the list*/
+}
+
+.header .navbar ul li.active a, .header .navbar ul li a:hover {
+    color: #E63946; /* colour when you hoves on text*/
+}
+
+.header .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+} 
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+.block1 {
+    width: 100%;
+    height: 90%;
+    background-color:#ABDADC;
+}
+.block1 .back h3{
+    color: #E63946;
+    font-family: 'Courier New';
+    font-size: xx-large;
+    margin-left: 32%;
+    margin-right: 25%;
+}
+.back .con p {
+    line-height: 2;
+    color: #1D3557;
+    font-size: 20px;
+    text-align: center;
+    transform: rotateY(180deg);
+  
+}
+
+
+
+.back .con {
+    float: left;
+    width: 30%;
+    height: 20%;
+    background-color: WHITE;
+    margin-right: 5%;
+    box-shadow: 0 8px 9px rgba(0, 0, 0, .5);
+    margin-top: 5%;
+    margin-left: 5%
+}
+.back{
+    width: 70%;
+    margin-left: 22%;
+}
+/*----------------------------------------------------------------------------*/
+.flip-card {
+  background-color: transparent;
+  width:100%;
+  height: 100%;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  margin-top: -5%;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container*/ 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
