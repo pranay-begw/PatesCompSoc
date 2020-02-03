@@ -1,0 +1,108 @@
+﻿<html>
+<head>
+ <meta charset="utf-8">
+    <title> KS4 helper </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="projectContentPage.css">
+   
+<body>
+<div class = "header">
+<div class="navbar">
+<div class="Container">
+    <h3> KS4 <span>Helper</span> </h3>
+    <ul>
+       <li class="active"><a href="#"> Home</a></li>
+       <li><a href="#">Networks</a> </li>
+       <li><a href="#"> Data Types</a> </li>
+       <li><a href="#">Algorithms  </a></li>
+       <li><a href="#"> Architecture </a></li>
+       <li><a href="#"> Other </a></li>
+       <li><a href="#"> Developers</a> </li>
+
+    
+    </ul>
+    
+</div>
+</div>
+</div>
+<div class="main">
+<div class="back">
+<div class="con">
+<h2> Title </h2>
+
+<p style="font-family:courier;">Let's denote the size of the array (array.length) by nnn. The maximum number of times that the for-loop can run is nnn, and this worst case occurs when the value being searched for is not present in the array.
+Each time the for-loop iterates, it has to do several things:
+compare guess with array.length
+compare array[guess] with targetValue
+possibly return the value of guess
+increment guess.
+Each of these little computations takes a constant amount of time each time it executes. If the for-loop iterates nnn times, then the time for all nnn iterations is c_1 \cdot nc 
+1
+​	
+ ⋅nc, start subscript, 1, end subscript, dot, n, where c_1c 
+1
+​	
+ c, start subscript, 1, end subscript is the sum of the times for the computations in one loop iteration. Now, we cannot say here what the value of c_1c 
+1
+​	
+ c, start subscript, 1, end subscript is, because it depends on the speed of the computer, the programming language used, the compiler or interpreter that translates the source program into runnable code, and other factors. <br><br>
+This code has a little bit of extra overhead, for setting up the for-loop (including initializing guess to 0) and possibly returning -1 at the end. Let's call the time for this overhead c_2c 
+2
+​	
+ c, start subscript, 2, end subscript, which is also a constant. Therefore, the total time for linear search in the worst case is c_1 \cdot n + c_2c 
+1
+​
+	
+ ⋅n+c 
+2
+​	
+ c, start subscript, 1, end subscript, dot, n, plus, c, start subscript, 2, end subscript.
+As we've argued, the constant factor c_1c 
+1
+​	
+ c, start subscript, 1, end subscript and the low-order term c_2c 
+2
+​	
+ c, start subscript, 2, end subscript don't tell us about the rate of growth of the running time. What's significant is that the worst-case running time of linear search grows like the array size nnn. The notation we use for this running time is \Theta(n)Θ(n)\Theta, left parenthesis, n, right parenthesis. That's the Greek letter "theta," and we say "big-Theta of nnn" or just "Theta of nnn."
+When we say that a particular running time is \Theta(n)Θ(n)\Theta, left parenthesis, n, right parenthesis, we're saying that once nnn gets large enough, the running time is at least k_1 \cdot nk 
+1
+​	
+ ⋅nk, start subscript, 1, end subscript, dot, n and at most k_2 \cdot nk 
+2
+​	
+ ⋅nk, start subscript, 2, end subscript, dot, n for some constants k_1k 
+1
+​	
+ k, start subscript, 1, end subscript and k_2k 
+2
+​	
+ k, start subscript, 2, end subscript. Here's how to think of \Theta(n)Θ(n)\Theta, left parenthesis, n, right parenthesis:</p>
+<li> <img src="https://mk0linkedinsigh78tks.kinstacdn.com/wp-content/uploads/2019/09/Screen-Shot-2019-09-05-at-11.00.46-AM-1024x766.png" alt="" width="400" height="300"> </li>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer">
+    <div class="Container">
+      <span>c     o    p    y    r    i    g    h    t    © 2 0 2 0 KS4 help </span>
+      <ul>
+
+    <li> <img src="https://www.circle-cafe.com/files/social-icons/tw.svg" alt=""> </li>
+
+    <li> <img src="https://www.aupairireland.ie/svg/icon-facebook.svg" alt=""> </li>
+
+    <li> <img src="https://www.circle-cafe.com/files/social-icons/in.svg" alt=""> </li>
+
+    <li> <img src="" alt=""> </li>
+
+
+        </ul>
+    </div>
+    </div>
+
+</body>
+</head>
