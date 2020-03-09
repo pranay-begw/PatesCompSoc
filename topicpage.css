@@ -1,0 +1,202 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+body {
+    width: 100%; /*Sets the width of the body to max*/
+    height: 100%;/*Sets the height of the body to max*/
+    margin: 0;/*leaves no margn around the body*/
+    font-family: 'Courier New', Courier, monospace;
+    background-color:#ABDADC;
+}
+
+.home {
+    width:100%;
+}
+
+.header .navbar {
+    background-color: #1D3557;/*colour for the navbar*/
+    color: #fff;/*colour for the navbar text*/
+    overflow: hidden;
+    border: 1px #E63946;
+}
+.Container {
+    width: 1170px;/*Arranges the text inside the navbar and sets an apt margin agound it*/
+    margin: auto;
+}
+.header .navbar h3 {
+    float: left;/*places the words"KS4 helper to the left of the navbar because that is the word within the header,navbar and h3 tags"*/
+}
+
+.header .navbar h3 span {
+    color: #E63946;/*Changes the colour of the word "helper" as it is within <span>*/
+}
+.header .navbar ul {
+    list-style: none;
+    padding-left: 0px;
+    overflow: hidden;
+    float: right;
+}
+.header .navbar ul li {
+    float: left; /*places each element of the list in the same horizontal line eg: a b c */
+    padding: 5px;/*5px gap bw each element of the list*/
+}
+
+.header .navbar ul li.active a, .header .navbar ul li a:hover {
+    color: #E63946; /* colour when you hoves on text*/
+}
+
+.header .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+} 
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#main{
+    background-color: white;
+    margin: auto;
+    width: 70%;
+    height: auto;
+    position: absolute;
+
+    box-shadow: 0 8px 9px rgba(0, 0, 0, .5);
+    left: 0;
+    right: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* Important styles */
+#toggle {
+    display: block;
+    width: 28px;
+    height: 30px;
+    margin: 30px auto 10px;
+  }
+  
+  #toggle span:after,
+  #toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+  }
+  #toggle span:after{
+    top: 9px;
+  }
+  #toggle span {
+    position: relative;
+    display: block;
+  }
+  
+  #toggle span,
+  #toggle span:after,
+  #toggle span:before {
+    width: 100%;
+    height: 5px;
+    background-color: #888;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+  }
+  
+  /* on activation */
+  #toggle.on span {
+    background-color: transparent;
+  }
+  #toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  #toggle.on + #menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* menu appearance*/
+  #menu {
+    position: relative;
+    color: #999;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+    /* just for this demo */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s;
+  }
+  #menu:after {
+    position: absolute;
+    top: -15px;
+    left: 95px;
+    content: "";
+    display: block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid white;
+  }
+  ul, li, li a {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  li a {
+    padding: 5px;
+    color: #888;
+    text-decoration: none;
+    transition: all .2s;
+  }
+  li a:hover,
+  li a:focus {
+    background: #ABDADC;
+    color: #fff;
+  }
+  
+  #main .p{
+    color: #888;
+    margin-top: -10%;
+    text-align: right;
+    margin-right: 10%;
+  }
+
+ 
+.line-1{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+    color: #888;
+    margin-top: -10%;
+    text-align: right;
+    margin-right: 10%;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.content{
+    text-align: center;
+    width: 70%;
+
+}

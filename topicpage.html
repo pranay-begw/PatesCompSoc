@@ -1,0 +1,117 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Contents</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="topicpage.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="navbar">
+            <div class="container">
+
+                <h3> Your <span>Topic</span> </h3>
+                <ul>
+
+                    <li class="active"><a href="#"> Home</a></li>
+                    <li><a href="#">Networks</a> </li>
+                    <li><a href="#"> Data Types</a> </li>
+                    <li><a href="#">Algorithms </a></li>
+                    <li><a href="#"> Architecture </a></li>
+                    <li><a href="#"> Other </a></li>
+                    <li><a href="#"> Developers</a> </li>
+
+            </div>
+
+
+            </ul>
+
+        </div>
+    </div>
+    </div>
+
+    <div id="main">
+        <div class="top">
+            <a href="#menu" id="toggle"><span></span></a>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="#">othertopic1</a></li>
+                    <li><a href="#">othertopic2</a></li>
+                    <li><a href="#">othertopic3</a></li>
+                </ul>
+            </div>
+
+
+            <div class="title">
+                <p class="line-1 anim-typewriter">Your topic</p>
+            </div>
+
+            <div class="content">
+                <p>
+                    ufvbtiufcddubuiruybduisyiufyiueyfeusbiduyfiusydboiybeiryyfboivbcxogyobisodigybveurgdbfyuysfioweysfodhrkbgjkvhxuiyfbiguybstuyxodbyfboiweosiufdhfbehtbo4ywiofyoidhfdbisfb
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+
+<script>
+
+    var theToggle = document.getElementById('toggle');
+
+
+    // hasClass
+    function hasClass(elem, className) {
+        return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+    }
+    // addClass
+    function addClass(elem, className) {
+        if (!hasClass(elem, className)) {
+            elem.className += ' ' + className;
+        }
+    }
+    // removeClass
+    function removeClass(elem, className) {
+        var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
+        if (hasClass(elem, className)) {
+            while (newClass.indexOf(' ' + className + ' ') >= 0) {
+                newClass = newClass.replace(' ' + className + ' ', ' ');
+            }
+            elem.className = newClass.replace(/^\s+|\s+$/g, '');
+        }
+    }
+    // toggleClass
+    function toggleClass(elem, className) {
+        var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, " ") + ' ';
+        if (hasClass(elem, className)) {
+            while (newClass.indexOf(" " + className + " ") >= 0) {
+                newClass = newClass.replace(" " + className + " ", " ");
+            }
+            elem.className = newClass.replace(/^\s+|\s+$/g, '');
+        } else {
+            elem.className += ' ' + className;
+        }
+    }
+
+    theToggle.onclick = function () {
+        toggleClass(this, 'on');
+        return false;
+    }
+</script>
